@@ -3,50 +3,59 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   margin: 0px;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding: 0 16px;
+}
 
 header {
   padding: 20px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
   margin: 0;
   position: relative;
-  z-index: 1000; }
+  z-index: 1000;
+}
 
 header h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+}
 
-main .city {
+.city {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   background-color: #f3f3f3;
   text-align: center;
-  font-size: 15px; }
-
+  font-size: 15px;
+}
 .city i {
-  font-size: 22px; }
+  font-size: 22px;
+}
 
 .explorer {
   text-align: center;
   background-color: #fafafa;
-  padding: 30px; }
-
+  padding: 30px;
+}
 .explorer h2 {
   display: block;
   font-size: 24px;
-  margin: 0; }
-
+  margin: 0;
+}
 .explorer p {
   font-weight: 300;
-  margin: 24px 0; }
-
+  margin: 24px 0;
+}
 .explorer button {
   padding: 12px 24px;
   font-size: 22px;
@@ -56,15 +65,35 @@ main .city {
   font-weight: 300;
   background-color: #686868;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  transition: transform 200ms; }
-
+  transition: transform 200ms;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
 .explorer button:hover {
   transform: scale(1.02);
-  opacity: 0.9; }
+  opacity: 0.9;
+}
 
-div {
-  background-color: blue; }
+.tuto ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+@media (max-width: 800px) {
+  .tuto ol {
+    flex-direction: column;
+  }
+}
+.tuto li {
+  background-color: #f6f6f6;
+  padding: 16px 32px;
+  border: 1px solid red;
+  flex-grow: 1;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.tuto li:hover {
+  transform: scale(1.02);
+}
 
 /*# sourceMappingURL=style.css.map */
