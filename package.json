@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Mon projet OpenClassrooms 3 OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imane33941/OhMyFood.git"
+  },
+  "author": "Imane Bichon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imane33941/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/imane33941/OhMyFood#readme",
+  "dependencies": {
+    "sass": "^1.81.0"
+  }
+}

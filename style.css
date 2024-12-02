@@ -75,5 +75,5 @@ main .city {
 
 .explorer button:hover {
     transform: scale(1.02);
-    /* opacity: 0.9; */
+    opacity: 0.9;
 }
