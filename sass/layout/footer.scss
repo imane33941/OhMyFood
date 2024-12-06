@@ -1,0 +1,41 @@
+@use "../utils/colors";
+@use "../utils/variables";
+
+footer {
+    background-color: colors.$darkgrey;
+    padding: 0 10px;
+    color: white;
+    margin-top: -20px;
+    height: 18vh;
+    h2 {
+        font-family: "Shrikhand", sans-serif;
+        padding-top: 10px;
+    }
+    .footer-list > div {
+        margin: 5px;
+    }
+    .fa-utensils {
+        padding-right: 5px;
+    }
+    @media (min-width: variables.$breakpoint) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 100px;
+        padding-right: 60px;
+        height: auto;
+        flex-grow: 2;
+        h2 {
+            order: 2;
+        }
+        .footer-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            margin-top: 10px;
+
+        }
+    }
+    
+}

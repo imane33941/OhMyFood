@@ -1,17 +1,21 @@
-@use "../utils/box-shadow";
-@use "../utils/zoom";
+@use "../utils/mixins";
 @use "../utils/variables";
 @use "../utils/colors";
 
 
 .tuto {
     counter-reset: steps;
+    margin-bottom: 60px;
+    padding-right: 0px; 
+    padding-left: 16px;
     & ol {
         display: flex;
+        flex-direction: column;
         gap: 32px;
         margin: 0;
-        @media (max-width: 800px) {
-            flex-direction: column;
+        padding: 0;
+        @media (min-width: variables.$breakpoint) {
+            flex-direction: row;
         }
     }
     & li {
@@ -27,6 +31,8 @@
             color: white;
             position: absolute;
             left: -1 * variables.$tuto-bullet-height;
+            top: 50%;
+            transform: translateY(-50%);
             border-radius: 50% ;
             width: 2 * variables.$tuto-bullet-height;
             height: 2 * variables.$tuto-bullet-height;
@@ -36,9 +42,9 @@
         flex-grow: 1;
         border-radius: 20px;
         padding: 24px 32px;
-        @include box-shadow.base-shadow;
+        @include mixins.box-shadow;
         &:hover {
-            @include zoom.transform-zoom;
+            @include mixins.transform-zoom;
         }
         & i.fas {
             margin-right: 16px;

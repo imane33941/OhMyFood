@@ -1,0 +1,62 @@
+@use "../utils/variables";
+@use "../utils/colors.scss";
+@use "../utils/mixins";
+
+#homepage {
+
+    .menus {
+        background-color: #f6f6f6;
+        padding-top: 32px;
+        padding-bottom: 70px;
+        .menus_cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 32px;
+            row-gap: 32px;
+            .card {
+                background-color: white;
+                border-radius: 16px;
+                position: relative;
+                display: block;
+                &.new {
+                    position: relative
+                }
+                &.new::before {
+                    content: "Nouveau";
+                    position: absolute;
+                    height: 32px;
+                    // width: 32px;
+                    background-color: colors.$color-tertiary;
+                    color: darken(colors.$color-tertiary, 100%);
+                    padding: 10px;
+                    border-radius: 4px;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: 16px;
+                    right: 20px;
+                }
+                &__img {
+                    height: 192px;
+                    width: 100%;
+                    object-fit: cover;
+                    border: 0 solid transparent;
+                    border-radius: 16px 16px 0 0 ;
+                }
+                &__content {
+                    @include mixins.heart-animated;
+                    .card__title, .card__subtitle {
+                        margin: 0;
+                    }
+                    
+                }  
+            } 
+            @media (min-width: variables.$breakpoint) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        } 
+    }
+}
+    
+    

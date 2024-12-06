@@ -1,4 +1,5 @@
-@use "../utils/box-shadow";
+@use "../utils/mixins";
+
 
 .explorer {
     text-align: center;
@@ -14,21 +15,6 @@
         margin: 24px 0;
     }
     & button {
-        padding: 12px 24px;
-        font-size: 22px;
-        border-radius: 100px;
-        border: none;
-        color: white;
-        font-weight: 300;
-        background-color: #686868;
-        background-image: linear-gradient(to top,rgba(147,86,220,.9),
-        rgba(255,121,218,.9));      
-        cursor: pointer;
-        transition: transform 200ms;
-        @include box-shadow.base-shadow;
-    }
-    & button:hover {
-        transform: scale(1.02);
-        opacity: 0.9;
+        @include mixins.base-button;
     }
 }
