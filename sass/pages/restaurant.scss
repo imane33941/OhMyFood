@@ -35,7 +35,6 @@
             @include mixins.heart-animated;
             padding-top: 32px;
         }
-        
         .menus {
             display: flex;
             flex-direction: column;
@@ -58,15 +57,14 @@
                     background-color: colors.$color-tertiary;
                 }
             }
-            .menu-item {
+            & .menu-item {
                 $numberofItems: 3;
                 @for $i from 1 through $numberofItems {
                     &:nth-child(#{$i}) {
                         animation-delay: 100ms * $i;
-                        
                     }
                 }
-                margin: 16px 0;
+                
                 display: flex;
                 background-color: white;
                 border-radius: 20px;
