@@ -208,6 +208,10 @@ header h1 {
 }
 .tuto li:hover {
   transform: scale(1.02);
+  background-color: rgb(241.5, 233.875, 250.625);
+}
+.tuto li:hover i::before {
+  color: #9356dc;
 }
 .tuto li i.fas {
   margin-right: 16px;

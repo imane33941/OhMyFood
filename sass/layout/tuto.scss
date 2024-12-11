@@ -45,6 +45,10 @@
         @include mixins.box-shadow;
         &:hover {
             @include mixins.transform-zoom;
+            background-color: lighten(colors.$purple, 35%);
+            i::before {
+                color: colors.$purple;
+            }
         }
         & i.fas {
             margin-right: 16px;
