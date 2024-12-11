@@ -378,6 +378,7 @@ footer .fa-utensils {
 #page-resto-1 .menu-resto-1 .menus .submenu__title {
   text-transform: uppercase;
   position: relative;
+  margin: 5px;
 }
 #page-resto-1 .menu-resto-1 .menus .submenu__title::after {
   content: "";
@@ -393,6 +394,7 @@ footer .fa-utensils {
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
+  margin: 24px 0;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   animation: appear 1s;
   animation-fill-mode: both;

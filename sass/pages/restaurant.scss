@@ -47,6 +47,7 @@
             & .submenu__title {
                 text-transform: uppercase;
                 position: relative;
+                margin: 5px;
                 &::after {
                     content: "";
                     position: absolute;
@@ -69,6 +70,7 @@
                 background-color: white;
                 border-radius: 20px;
                 overflow: hidden;
+                margin: 24px 0;
                 @include mixins.box-shadow;
                 animation: appear 1s;
                 animation-fill-mode: both;
