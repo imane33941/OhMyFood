@@ -389,6 +389,7 @@ footer .fa-utensils {
   background-color: #99E2D0;
 }
 #page-resto-1 .menu-resto-1 .menus .menu-item {
+  margin: 16px 0;
   display: flex;
   background-color: white;
   border-radius: 20px;
