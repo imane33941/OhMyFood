@@ -96,6 +96,78 @@ header h1 {
   opacity: 0.9;
 }
 
+.loader-all {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear 200ms 3s forwards;
+  transform-origin: top;
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+  border: 0px solid #011015;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.loader:nth-child(1) {
+  border-bottom-width: 8px;
+  border-color: rgb(255, 0, 255);
+  animation: rotate1 3s linear infinite;
+}
+
+.loader:nth-child(2) {
+  border-right-width: 8px;
+  border-color: rgb(0, 247, 255);
+  animation: rotate2 3s linear infinite;
+}
+
+.loader:nth-child(3) {
+  border-top-width: 8px;
+  border-color: rgb(0, 255, 13);
+  animation: rotate3 3s linear infinite;
+}
+
+.loading {
+  color: #000;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate3 {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes disappear {
+  to {
+    transform: scale(0);
+  }
+}
 .tuto {
   counter-reset: steps;
   margin-bottom: 60px;
@@ -254,9 +326,8 @@ header h1 {
 
 footer {
   background-color: #353535;
-  padding: 0 10px;
+  padding: 16px 25px;
   color: white;
-  margin-top: -20px;
 }
 footer h2 {
   font-family: "Shrikhand", sans-serif;
@@ -323,7 +394,6 @@ footer .fa-utensils {
   background-color: #f6f6f6;
   border-radius: 32px 32px 0 0;
   margin-top: -48px;
-  padding: 0;
 }
 #page-resto-1 .menu-resto-1 .title-header {
   font-family: "Shrikhand", "cursive";
@@ -373,6 +443,12 @@ footer .fa-utensils {
   opacity: 1;
   transform: scale(1.02);
 }
+@media (min-width: 767px) {
+  #page-resto-1 .menu-resto-1 .title-header {
+    margin: auto;
+    width: 50%;
+  }
+}
 #page-resto-1 .menu-resto-1 .menus {
   display: flex;
   flex-direction: column;
@@ -385,7 +461,6 @@ footer .fa-utensils {
 #page-resto-1 .menu-resto-1 .menus .submenu__title {
   text-transform: uppercase;
   position: relative;
-  margin: 5px;
 }
 #page-resto-1 .menu-resto-1 .menus .submenu__title::after {
   content: "";
@@ -397,11 +472,11 @@ footer .fa-utensils {
   background-color: #99E2D0;
 }
 #page-resto-1 .menu-resto-1 .menus .menu-item {
+  margin: 16px 0;
   display: flex;
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
-  margin: 24px 0;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   animation: appear 1s;
   animation-fill-mode: both;
@@ -489,6 +564,14 @@ footer .fa-utensils {
 #page-resto-1 section.order button:hover {
   transform: scale(1.02);
   opacity: 0.9;
+}
+@media (min-width: 767px) {
+  #page-resto-1 .container {
+    width: 50%;
+    display: grid;
+    transform: translateX(50%);
+    padding: 0 150px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
