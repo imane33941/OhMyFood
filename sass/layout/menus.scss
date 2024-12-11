@@ -54,6 +54,8 @@
             } 
             @media (min-width: variables.$breakpoint) {
                 grid-template-columns: repeat(2, 1fr);
+                column-gap: 65px;
+                row-gap: 48px;
             }
         } 
     }
