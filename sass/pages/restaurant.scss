@@ -37,10 +37,8 @@
             padding-top: 32px;
            
             @media (min-width: variables.$breakpoint-tablette) {
-                align-items: center;
-                margin-right: 200px;
-                
-                
+                max-width: 50%;
+                margin: auto;
             }
         }
         
@@ -48,7 +46,7 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
-            padding: 20px;
+            padding: 0 20px;
             
             & .menu__category {
                 overflow: hidden;
@@ -57,6 +55,7 @@
             & .submenu__title {
                 text-transform: uppercase;
                 position: relative;
+                margin: 0;
                 &::after {
                     content: "";
                     position: absolute;
@@ -71,7 +70,7 @@
                 $numberofItems: 3;
                 @for $i from 1 through $numberofItems {
                     &:nth-child(#{$i}) {
-                        animation-delay: 100ms * $i;
+                        animation-delay: 200ms * $i;
                         
                     }
                 }
@@ -125,11 +124,6 @@
                     .menu-item-check {
                         margin-right: 0;
                     }
-                    i {
-                        @include animations.quarterspin;
-                        animation: quarterspin .5s ease-in-out;
-                    }
-
                 }
             }
         }
@@ -143,11 +137,12 @@
             @include mixins.base-button;
         }
     }
+    
     @media (min-width: variables.$breakpoint-tablette) {
         .container {
-            padding: 0 60px;
-            margin-left: 150px;
-            margin-right: 150px;
+            max-width: 1280px;
+            margin: auto;
+            margin-top: -68px;
         }
     }
 }

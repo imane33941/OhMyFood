@@ -1,13 +1,3 @@
-@mixin quarterspin {
-    @keyframes quarterspin {
-        0% {
-            transform: rotate(-270deg);
-        }
-        100% {
-            transform: rotate(0);
-        }
-    }
-}
 
 @keyframes appear {
     0% {
