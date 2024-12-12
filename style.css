@@ -533,12 +533,12 @@ footer .fa-utensils {
 #page-resto-1 .menu-resto-1 .menus .menu-item:hover .menu-item-check {
   margin-right: 0;
 }
-#page-resto-1 section.order {
+#page-resto-1 .order {
   height: 15vh;
   display: grid;
   place-items: center;
 }
-#page-resto-1 section.order button {
+#page-resto-1 .order button {
   padding: 12px 24px;
   font-size: 22px;
   border-radius: 100px;
@@ -551,7 +551,7 @@ footer .fa-utensils {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
-#page-resto-1 section.order button:hover {
+#page-resto-1 .order button:hover {
   transform: scale(1.02);
   opacity: 0.9;
 }
