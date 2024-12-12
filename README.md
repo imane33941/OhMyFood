@@ -1,4 +1,4 @@
-![ohmyfood](/assets/img/logo/ohmyfood.png)
+![ohmyfood](./Images/assets/favicon_io/android-chrome-192x192.png)
 
 # ohmyfood 📱🍴
 
