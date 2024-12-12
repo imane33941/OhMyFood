@@ -28,16 +28,19 @@
     .menu-resto-1 {
         background-color: colors.$lightergrey;
         border-radius: 32px 32px 0 0;
-        margin-top: -48px;
+        margin-top: -68px;
+        
         
         .title-header {
             font-family: "Shrikhand", "cursive";
             @include mixins.heart-animated;
             padding-top: 32px;
            
-            @media (min-width: variables.$breakpoint) {
-                margin: auto;
-                width: 50%;
+            @media (min-width: variables.$breakpoint-tablette) {
+                align-items: center;
+                margin-right: 200px;
+                
+                
             }
         }
         
@@ -140,12 +143,11 @@
             @include mixins.base-button;
         }
     }
-    @media (min-width: variables.$breakpoint) {
+    @media (min-width: variables.$breakpoint-tablette) {
         .container {
-            width: 50%;
-            display: grid;
-            transform: translateX(50%);
-            padding: 0 150px;
+            padding: 0 60px;
+            margin-left: 150px;
+            margin-right: 150px;
         }
     }
 }
