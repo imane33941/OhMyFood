@@ -1,6 +1,4 @@
-![ohmyfood](./Images/assets/favicon_io/favicon-16x16.png)
-
-# ohmyfood 📱🍴
+# ohmyfood ![ohmyfood](./Images/assets/favicon_io/favicon-16x16.png)
 
 ## Description :
 
@@ -26,13 +24,13 @@ L’objectif est de réaliser un site “mobile first” qui répertorie les men
 Mon rôle a été de réaliser le site en intégrant les maquettes mobile First, c'est-à-dire que le CSS principal nous servira pour le mobile, et que les media queries nous permettront d’aller vers le format desktop.  
 L'intégration devra se faire en HTML et CSS afin de rendre le site dynamique avec diverses animations soignées.
 
-[Voir les maquettes](#maquettes-)
+[Voir la maquettes](#maquettes-)
 
 ### Cahier des charges :
 
 #### Contraintes techniques :
 
-- Respecter les maquettes mobiles et réaliser le site en utilisant une approche Mobile first puis tablette, et enn l'intégration du responsive vers le desktop.
+- Respecter les maquettes mobiles et réaliser le site en utilisant une approche Mobile first puis tablette, et enfin l'intégration du responsive vers le desktop.
 - Identité graphique :
   - Primaire : ![#9356DC](https://via.placeholder.com/15/9356dc/000000?text=+) `#9356dc`
   - Secondaire : ![#FF79DA](https://via.placeholder.com/15/ff79da/000000?text=+) `#ff79da`
@@ -49,7 +47,7 @@ L'intégration devra se faire en HTML et CSS afin de rendre le site dynamique av
 - Les pages devront passer la validation W3C en HTML et CSS sans erreur.
 - Le site doit être compatible avec les dernières versions de Chrome, Firefox et Firefox.
 
-#### Livrables attendus :
+### Livrables attendus :
 
 #### Contenu des pages :
 
@@ -97,20 +95,13 @@ L'intégration devra se faire en HTML et CSS afin de rendre le site dynamique av
 - [GitHub Pages](https://pages.github.com/) - Outil d’hébergement d'un site web
 - [Validateur W3C](https://validator.w3.org/) - Outil pour vérifier que le code est conforme aux standards du Web.
 
-Venez visiter mon site [OhMyFood] https://github.com/imane33941/OhMyFood
+Venez visiter mon site [OhMyFood](https://imane33941.github.io/OhMyFood/)
 
 ## Maquettes :
 
-Accueil :
+Accueil & menu:
 
 <p align="center">
   <img src="./Images/assets/logo/homepage1.png" alt="Maquette Accueil">
 </p>
-
-Page menu :
-
-<p align="center">
-  <img src="./Images/assets/logo/menus.png" alt="Maquette Menu">
-</p>
-
 ---
