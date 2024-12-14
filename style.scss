@@ -1,8 +1,8 @@
 @use "./sass/base.scss";
 @use "./sass/layout/header.scss";
-@use "./sass/components/city.scss";
-@use "./sass/components/explorer.scss";
-@use "./sass/components/tuto.scss";
+@use "./sass/pages/homepage/city.scss";
+@use "./sass/pages/homepage/explorer.scss";
+@use "./sass/pages/homepage/tuto.scss";
 @use "./sass/layout/menus";
 @use "./sass/layout/footer.scss";
 @use "./sass/pages/restaurant.scss";
