@@ -1,0 +1,45 @@
+.loader-all {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+    height: 100vh;
+    inset: 0;
+    z-index: 2;
+    opacity: 0.9;
+    animation: disappear 200ms 2s forwards;
+    transform-origin: top;
+    .loader {
+        width: 200px;
+        height: 200px;
+        border: 0px solid #011015;
+        border-radius: 50%;
+        position: absolute;
+        &:nth-child(1){
+            border-bottom-width: 8px;
+            border-color: rgb(255, 0, 255);
+            animation: rotate1 3s linear infinite;
+        }
+        &:nth-child(2){
+            border-right-width: 8px;
+            border-color: rgb(0, 247, 255);
+            animation: rotate2 3s linear infinite;
+        }
+        &:nth-child(3){
+            border-top-width: 8px;
+            border-color: rgb(0, 255, 13);
+            animation: rotate3 3s linear infinite;
+        }
+    }
+
+}
+.loading {
+    color: #000;
+}
+
+
+
+
+
+
+

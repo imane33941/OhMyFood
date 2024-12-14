@@ -12,7 +12,6 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
-        margin: 0;
         padding: 0;
         @media (min-width: variables.$breakpoint-tablette) {
             flex-direction: row;
@@ -24,20 +23,19 @@
         &::before {
             content: counter(steps);
             counter-increment: steps;
-            display: grid;
+            display: flex;
             justify-content: center;
             align-items: center;
             background-color: colors.$purple;
             color: white;
             position: absolute;
-            left: -1 * variables.$tuto-bullet-height;
+            left: -1 * variables.$tuto-steps-size;
             top: 50%;
             transform: translateY(-50%);
             border-radius: 50% ;
-            width: 2 * variables.$tuto-bullet-height;
-            height: 2 * variables.$tuto-bullet-height;
+            width: 2 * variables.$tuto-steps-size;
+            height: 2 * variables.$tuto-steps-size;
         }
-        list-style-type: none;
         background-color: #f6f6f6;
         flex-grow: 1;
         border-radius: 20px;
