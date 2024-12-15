@@ -9,13 +9,13 @@
         opacity: 1;
     }
 }
-
 @keyframes disappear {
     to {
         transform: scale(0);
     }
 }
 
+// pour le loader
 @keyframes rotate1 {
     0% {
         transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
@@ -24,7 +24,6 @@
         transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
     }
 }
-
 @keyframes rotate2 {
     0% {
         transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
@@ -33,7 +32,6 @@
         transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
     }
 }
-
 @keyframes rotate3 {
     0% {
         transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);

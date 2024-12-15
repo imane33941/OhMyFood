@@ -285,7 +285,7 @@ footer {
   color: white;
 }
 footer h2 {
-  font-family: "Shrikhand", "cursive";
+  font-family: "Shrikhand", cursive;
 }
 footer .footer-list > div {
   margin: 5px;

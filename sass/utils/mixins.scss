@@ -45,7 +45,7 @@
     }
     &:hover::after {
         opacity: 1;
-        transform: scale(1.02);
+        @include transform-zoom;
     }
 }
 
@@ -62,7 +62,7 @@
     @include box-shadow;
     @include gradient;
     &:hover {
-        transform: scale(1.02);
+        @include transform-zoom;
         opacity: 0.9;
     }
 }
