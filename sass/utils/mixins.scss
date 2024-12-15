@@ -36,10 +36,6 @@
 }
 
 @mixin heart-animated {
-    padding: 16px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
     &::before {
         @include heart;
     }

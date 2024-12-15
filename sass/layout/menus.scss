@@ -39,11 +39,13 @@
                     border-radius: 16px 16px 0 0 ;
                 }
                 &__content {
+                    padding: 16px;
+                    display: flex;
+                    flex-direction: column;
                     @include mixins.heart-animated;
                     .card__title, .card__subtitle {
                         margin: 0;
                     }
-                    
                 }  
             } 
             @media (min-width: variables.$breakpoint) {

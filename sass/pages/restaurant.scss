@@ -27,10 +27,10 @@
         
         
         .title-header {
+            position: relative;
             font-family: "Shrikhand", "cursive";
             @include mixins.heart-animated;
             padding-top: 32px;
-           
             @media (min-width: variables.$breakpoint-tablette) {
                 max-width: 50%;
                 margin: auto;

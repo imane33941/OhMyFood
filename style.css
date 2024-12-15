@@ -183,8 +183,7 @@ header h1 {
   border-color: rgb(0, 255, 13);
   animation: rotate3 3s linear infinite;
 }
-
-.loading {
+.loader-all .loading {
   color: #000;
 }
 
@@ -227,7 +226,6 @@ header h1 {
 }
 #homepage .menus .menus_cards .card__content {
   padding: 16px;
-  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -377,11 +375,8 @@ footer .fa-utensils {
   margin-top: -68px;
 }
 #page-resto .menu-resto .title-header {
-  font-family: "Shrikhand", "cursive";
-  padding: 16px;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  font-family: "Shrikhand", "cursive";
   padding-top: 32px;
 }
 #page-resto .menu-resto .title-header::before {
