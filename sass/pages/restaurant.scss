@@ -5,6 +5,7 @@
 
 #page-resto {
     header {
+        // icone retour sur les pages des differentes restaurant
         &::before {
             position: absolute;
             @include mixins.font-awesome($font-weight: 900);
@@ -14,7 +15,8 @@
             transform: translateY(-50%);
         }
     }
-    .banner img {
+    // banniere
+    .banner img { 
         width: 100%;
         max-height: 35vh;
         object-fit: cover;
@@ -46,6 +48,7 @@
                 text-transform: uppercase;
                 position: relative;
                 margin: 0;
+                // trait de soulignement
                 &::after {
                     content: "";
                     position: absolute;
@@ -57,6 +60,7 @@
                 }
             }
             .menu-item {
+                // boucle pour annimation des plats progressivement
                 $numberofItems: 4;
                 @for $i from 1 through $numberofItems {
                     &:nth-child(#{$i}) {
@@ -119,6 +123,7 @@
         }
         
     }
+    // bouton commander
     .order {
         height: 15vh;
         display: grid;
@@ -127,7 +132,7 @@
             @include mixins.base-button;
         }
     }
-    
+    // media queries pour affichage desktop
     @media (min-width: variables.$breakpoint-tablette) {
         .container {
             max-width: 1280px;

@@ -1,10 +1,11 @@
 
-
+// gradient color pour le coeur ainsi que les boutons
 @mixin gradient($opacity: 0.9) {
     background-image: linear-gradient(to top,rgba(147,86,220,$opacity),
                     rgba(255,121,218,$opacity));
 }
 
+// box shadow 
 @mixin box-shadow {
     box-shadow: 4px 4px 10px rgba(0,0,0,.25);
 }
@@ -13,6 +14,7 @@
     transform: scale(1.02);
 }
 
+// variable créée pour regrouper toutes les fonctions communes pour les icones en utilisant unicode:
 @mixin font-awesome($font-weight:400){
     display: inline-block;
     font-style: normal;
@@ -23,6 +25,7 @@
     font-weight: $font-weight;
 }
 
+// variable pour le coeur qui sera utilisée sur plusieurs pages du site: 
 @mixin heart($opacity:1, $font-weight:400, $color:inherit) {
     @include font-awesome($font-weight);
     content: "\f004";
@@ -35,6 +38,7 @@
     transition: all 200ms ease-in-out;
 }
 
+// animation pour le coeur en utilisant les pseudoselements: 
 @mixin heart-animated {
     &::before {
         @include heart;
@@ -49,6 +53,7 @@
     }
 }
 
+// variable pour le style du bouton qu'on trouve sur la page d'accueil et les pages restaurants: 
 @mixin base-button {
     padding: 12px 24px;
     font-size: 22px;
