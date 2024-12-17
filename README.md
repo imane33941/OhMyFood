@@ -1,4 +1,3 @@
----
 # ohmyfood ![ohmyfood](./Images/assets/favicon_io/favicon-16x16.png)
 
 ## Description :
@@ -105,4 +104,3 @@ Accueil & menu:
 <p align="center">
   <img src="./Images/assets/logo/homepage1.png" alt="Maquette Accueil">
 </p>
----
