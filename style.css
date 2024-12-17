@@ -28,7 +28,7 @@ a {
   color: inherit;
 }
 
-ul {
+ol {
   list-style: none;
 }
 
@@ -228,8 +228,13 @@ header h1 {
   padding: 16px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-#homepage .menus .menus_cards .card__content::before {
+#homepage .menus .menus_cards .card__content .heart {
+  display: flex;
+  align-items: flex-end;
+}
+#homepage .menus .menus_cards .card__content .heart::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -246,7 +251,7 @@ header h1 {
   opacity: 1;
   transition: all 200ms ease-in-out;
 }
-#homepage .menus .menus_cards .card__content::after {
+#homepage .menus .menus_cards .card__content .heart::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -264,7 +269,7 @@ header h1 {
   transition: all 200ms ease-in-out;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
-#homepage .menus .menus_cards .card__content:hover::after {
+#homepage .menus .menus_cards .card__content .heart:hover::after {
   opacity: 1;
   transform: scale(1.02);
 }
@@ -373,13 +378,27 @@ footer .fa-utensils {
   background-color: #f6f6f6;
   border-radius: 32px 32px 0 0;
   margin-top: -68px;
+  position: relative;
 }
 #page-resto .menu-resto .title-header {
-  position: relative;
   font-family: "Shrikhand", "cursive";
   padding-top: 32px;
+  padding-left: 20px;
 }
-#page-resto .menu-resto .title-header::before {
+@media (min-width: 1024px) {
+  #page-resto .menu-resto .title-header {
+    max-width: 50%;
+    margin: auto;
+  }
+}
+#page-resto .menu-resto .heart {
+  position: absolute;
+  top: 50px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+}
+#page-resto .menu-resto .heart::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -396,7 +415,7 @@ footer .fa-utensils {
   opacity: 1;
   transition: all 200ms ease-in-out;
 }
-#page-resto .menu-resto .title-header::after {
+#page-resto .menu-resto .heart::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -414,14 +433,13 @@ footer .fa-utensils {
   transition: all 200ms ease-in-out;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
-#page-resto .menu-resto .title-header:hover::after {
+#page-resto .menu-resto .heart:hover::after {
   opacity: 1;
   transform: scale(1.02);
 }
 @media (min-width: 1024px) {
-  #page-resto .menu-resto .title-header {
-    max-width: 50%;
-    margin: auto;
+  #page-resto .menu-resto .heart {
+    right: 30%;
   }
 }
 #page-resto .menu-resto .menus {

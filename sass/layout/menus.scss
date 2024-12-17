@@ -42,7 +42,12 @@
                     padding: 16px;
                     display: flex;
                     flex-direction: column;
-                    @include mixins.heart-animated;
+                    position: relative;
+                    .heart {
+                        @include mixins.heart-animated;
+                        display: flex;
+                        align-items: flex-end;
+                    }
                     .card__title, .card__subtitle {
                         margin: 0;
                     }

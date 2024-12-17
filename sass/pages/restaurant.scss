@@ -26,16 +26,27 @@
         background-color: colors.$lightergrey;
         border-radius: 32px 32px 0 0;
         margin-top: -68px;
+        position: relative;
         
         
         .title-header {
-            position: relative;
             font-family: "Shrikhand", "cursive";
-            @include mixins.heart-animated;
             padding-top: 32px;
+            padding-left: 20px;
             @media (min-width: variables.$breakpoint-tablette) {
                 max-width: 50%;
                 margin: auto;
+            }
+        }
+        .heart {
+            position: absolute;
+            @include mixins.heart-animated;
+            top: 50px;
+            right: 16px;
+            display: flex;
+            align-items: center;
+            @media (min-width: variables.$breakpoint-tablette) {
+               right: 30%;
             }
         }
         
@@ -96,7 +107,7 @@
                 .menu-item-check {
                     display: grid;
                     place-items: center;
-                    flex-shrink: 0;
+                    flex-shrink: 0; // annuler le retrecissement
                     $button-width: 64px;
                     background-color: colors.$color-tertiary;
                     margin-right: -$button-width;
@@ -106,7 +117,7 @@
                         display: grid;
                         place-items: center;
                         background: white;
-                        aspect-ratio: 1;
+                        aspect-ratio: 1; // ratio entre width & height
                         width: 32px;
                         border-radius: 16px;
                         color: colors.$color-tertiary;
